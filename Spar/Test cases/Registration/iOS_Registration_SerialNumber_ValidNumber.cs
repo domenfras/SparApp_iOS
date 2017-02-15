@@ -41,6 +41,15 @@ namespace Spar.Test_cases.Registration
         /// </summary>
         public iOS_Registration_SerialNumber_ValidNumber()
         {
+            SNumber1 = "";
+            SNumber2 = "";
+            SNumber3 = "";
+            SNumber4 = "";
+            SNumber5 = "";
+            SNumber6 = "";
+            SNumber7 = "";
+            SNumber8 = "";
+            BirthDate = "";
         }
 
         /// <summary>
@@ -52,6 +61,114 @@ namespace Spar.Test_cases.Registration
         }
 
 #region Variables
+
+        string _SNumber1;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber1.
+        /// </summary>
+        [TestVariable("9a1b9fa0-5aea-4578-9ccf-d7a53d1200d4")]
+        public string SNumber1
+        {
+            get { return _SNumber1; }
+            set { _SNumber1 = value; }
+        }
+
+        string _SNumber2;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber2.
+        /// </summary>
+        [TestVariable("a9011f4d-e600-4156-b48a-ec8571763575")]
+        public string SNumber2
+        {
+            get { return _SNumber2; }
+            set { _SNumber2 = value; }
+        }
+
+        string _SNumber3;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber3.
+        /// </summary>
+        [TestVariable("d1b7e57e-c0ae-497c-b839-688392b18b6e")]
+        public string SNumber3
+        {
+            get { return _SNumber3; }
+            set { _SNumber3 = value; }
+        }
+
+        string _SNumber4;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber4.
+        /// </summary>
+        [TestVariable("38f5c839-6b32-4e6e-9bdd-ad57e5ffdf46")]
+        public string SNumber4
+        {
+            get { return _SNumber4; }
+            set { _SNumber4 = value; }
+        }
+
+        string _SNumber5;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber5.
+        /// </summary>
+        [TestVariable("f11a9151-1e14-4135-97b6-a0bd35da87e3")]
+        public string SNumber5
+        {
+            get { return _SNumber5; }
+            set { _SNumber5 = value; }
+        }
+
+        string _SNumber6;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber6.
+        /// </summary>
+        [TestVariable("d0170828-ba8a-43ad-a3b0-27f1667cc71b")]
+        public string SNumber6
+        {
+            get { return _SNumber6; }
+            set { _SNumber6 = value; }
+        }
+
+        string _SNumber7;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber7.
+        /// </summary>
+        [TestVariable("2ef1a759-c6b2-4e52-965e-deba7636ba71")]
+        public string SNumber7
+        {
+            get { return _SNumber7; }
+            set { _SNumber7 = value; }
+        }
+
+        string _SNumber8;
+
+        /// <summary>
+        /// Gets or sets the value of variable SNumber8.
+        /// </summary>
+        [TestVariable("167293ad-7c0f-493f-a1d0-346fce4144bd")]
+        public string SNumber8
+        {
+            get { return _SNumber8; }
+            set { _SNumber8 = value; }
+        }
+
+        string _BirthDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable BirthDate.
+        /// </summary>
+        [TestVariable("7c1a2200-af4f-4b73-8e2e-803d4d159ceb")]
+        public string BirthDate
+        {
+            get { return _BirthDate; }
+            set { _BirthDate = value; }
+        }
 
 #endregion
 
@@ -79,12 +196,84 @@ namespace Spar.Test_cases.Registration
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'com.inovaint.spar' on device 'iPhone7'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("iPhone7", "com.inovaint.spar", true);
-            Delay.Milliseconds(3500);
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.LandingScreen.VpišiteSerijskoŠtevilkoKartice' at Center", repo.ComInovaintSpar.SparAppElements.LandingScreen.VpišiteSerijskoŠtevilkoKarticeInfo, new RecordItemIndex(0));
+            repo.ComInovaintSpar.SparAppElements.LandingScreen.VpišiteSerijskoŠtevilkoKartice.Touch();
+            Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.LandingScreen.VpišiteSerijskoŠtevilkoKartice' at Center", repo.ComInovaintSpar.Registration.LandingScreen.VpišiteSerijskoŠtevilkoKarticeInfo, new RecordItemIndex(1));
-            repo.ComInovaintSpar.Registration.LandingScreen.VpišiteSerijskoŠtevilkoKartice.Touch();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Vpište serijsko številko kartice:') on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišteSerijskoŠtevilkoKartice'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišteSerijskoŠtevilkoKarticeInfo, new RecordItemIndex(1));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišteSerijskoŠtevilkoKarticeInfo, "Caption", "Vpište serijsko številko kartice:");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber1' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text1'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text1Info, new RecordItemIndex(2));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text1.Element.SetAttributeValue("Text", SNumber1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber2' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text2'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text2Info, new RecordItemIndex(3));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text2.Element.SetAttributeValue("Text", SNumber2);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber3' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text3'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text3Info, new RecordItemIndex(4));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text3.Element.SetAttributeValue("Text", SNumber3);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber4' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text4'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text4Info, new RecordItemIndex(5));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text4.Element.SetAttributeValue("Text", SNumber4);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber5' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text5'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text5Info, new RecordItemIndex(6));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text5.Element.SetAttributeValue("Text", SNumber5);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber6' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text6'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text6Info, new RecordItemIndex(7));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text6.Element.SetAttributeValue("Text", SNumber6);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber7' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text7'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text7Info, new RecordItemIndex(8));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text7.Element.SetAttributeValue("Text", SNumber7);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$SNumber8' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text8'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text8Info, new RecordItemIndex(9));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.SerialNumberFields.Text8.Element.SetAttributeValue("Text", SNumber8);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, new RecordItemIndex(10));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, "Enabled", "True");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava' at Center", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, new RecordItemIndex(11));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.PictureTick'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PictureTickInfo, new RecordItemIndex(12));
+            Validate.Exists(repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PictureTickInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$BirthDate' on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišiteDatumRojstva'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišiteDatumRojstvaInfo, new RecordItemIndex(13));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.VpišiteDatumRojstva.Element.SetAttributeValue("Text", BirthDate);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava'.", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, new RecordItemIndex(14));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, "Enabled", "True");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava' at Center", repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.PrijavaInfo, new RecordItemIndex(15));
+            repo.ComInovaintSpar.SparAppElements.Registration_SerialNumber.Prijava.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.PreskočiInfo, new RecordItemIndex(16));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Preskoči.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.PreskočiInfo, new RecordItemIndex(17));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Preskoči.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.PreskočiInfo, new RecordItemIndex(18));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Preskoči.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj' at Center", repo.ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.DokončajInfo, new RecordItemIndex(19));
+            repo.ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj.Touch();
             Delay.Milliseconds(500);
             
         }

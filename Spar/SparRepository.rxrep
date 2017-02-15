@@ -22,7 +22,7 @@ rxversion="6.2">
 		isrooted="True"
 		usecache="False">
 			<folder
-			name="Registration"
+			name="SparAppElements"
 			id="401a318b-7b68-42f9-b1d5-7f62df36fc32"
 			searchtimeout="30000ms"
 			capname="container"
@@ -547,19 +547,146 @@ rxversion="6.2">
 						</item>
 					</folder>
 				</folder>
+				<folder
+				name="Registration_SerialNumber"
+				id="7666805d-b880-4966-8123-85d8eab62999"
+				searchtimeout="0ms"
+				capname="unknown"
+				isrooted="False">
+					<item
+					name="VpišteSerijskoŠtevilkoKartice"
+					id="3855f10d-2a65-4bbf-b602-7ac10c167c4a"
+					searchtimeout="30000ms"
+					capname="text"
+					addcaps="text,ioselement,mobileuielement"
+					refimgid="a3a469e0-ac20-4554-bb39-760f1cb88626">
+						/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[@localizationkey='#login.cardNumber.enterNumber']
+					</item>
+					<item
+					name="Prijava"
+					id="0bdac2ef-7396-4525-97eb-b61a449b7825"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,ioselement,mobileuielement"
+					refimgid="f0c6fdfe-0c9d-42c8-9a30-dcf7a12c33cb">
+						/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//button[@accessibilitylabel='Prijava']
+					</item>
+					<folder
+					name="SerialNumberFields"
+					id="c84222b2-abb4-45ba-96b5-9f37c95f92d3"
+					searchtimeout="0ms"
+					capname="unknown"
+					isrooted="False">
+						<item
+						name="Text1"
+						id="430c7761-b5ac-46d8-b428-af37a95dae74"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="ceaf3462-1335-4f5b-864b-0543a1c9d62a">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[1]
+						</item>
+						<item
+						name="Text2"
+						id="bba5caf2-a645-4d80-8b1e-1cc721749a83"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="1e4d1f92-02c6-4a94-894a-df23d6336fd4">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[2]
+						</item>
+						<item
+						name="Text3"
+						id="57a4ade6-e41c-4ba4-902b-99ff919a5fc1"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="954bea7c-1f86-4cf5-bdca-50ee40521ffe">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[3]
+						</item>
+						<item
+						name="Text4"
+						id="ffe2f86e-fb0d-4d8c-9337-5f306aaf8aa3"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="ce6cd443-1caa-4c1d-b244-a4d8562b59b1">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[4]
+						</item>
+						<item
+						name="Text5"
+						id="aadc1ac5-f24e-4f24-8116-3e9f105a8167"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="798240df-141f-4c83-9a25-772357e3a503">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[5]
+						</item>
+						<item
+						name="Text6"
+						id="2a045277-b622-4e79-baaa-9eec1af4d0e0"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="0be8fabe-96fa-47b7-aa4a-ec15e93bf62a">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[6]
+						</item>
+						<item
+						name="Text7"
+						id="75fc8b72-b858-489d-96ed-eaa19eccd835"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="68357214-7220-4b7e-97f2-bf458e82c57f">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[7]
+						</item>
+						<item
+						name="Text8"
+						id="e8842c87-2e9a-4ffc-8ac3-9483a9199821"
+						searchtimeout="30000ms"
+						capname="text"
+						addcaps="text,ioselement,mobileuielement"
+						refimgid="a9177b0b-9073-4fba-9e52-47ad16647b49">
+							/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[8]
+						</item>
+					</folder>
+					<item
+					name="PictureTick"
+					id="8f0200b8-3d7c-4df8-bf89-28b4399863bc"
+					searchtimeout="30000ms"
+					capname="picture"
+					addcaps="picture,ioselement,mobileuielement"
+					refimgid="36728b03-a1fd-4248-b49d-afae899b4970">
+						/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//picture[@accessibilityid='ok']
+					</item>
+					<item
+					name="VpišiteDatumRojstva"
+					id="28659c0f-a8f6-428c-aa19-ca7e120ea075"
+					searchtimeout="30000ms"
+					capname="text">
+						/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//text[@accessibilitylabel='Vpi&#353;ite datum rojstva']
+					</item>
+				</folder>
+				<folder
+				name="Aktualno"
+				id="0b00d7ee-e7ec-4dca-92b1-dd21b24633e9"
+				searchtimeout="0ms"
+				capname="unknown"
+				isrooted="False">
+					<item
+					name="Prebrskaj"
+					id="01f0a008-c3b3-49c2-86fd-01ac5b1482a3"
+					searchtimeout="30000ms"
+					capname="button"
+					addcaps="button,ioselement,mobileuielement"
+					refimgid="49a2de78-a28a-4759-9ef4-54f6c3af04fd">
+						/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//button[@accessibilitylabel='Prebrskaj']
+					</item>
+				</folder>
 				<basepath>
 					/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']
 				</basepath>
 			</folder>
-			<item
-			name="Prebrskaj"
-			id="01f0a008-c3b3-49c2-86fd-01ac5b1482a3"
-			searchtimeout="30000ms"
-			capname="button"
-			addcaps="button,ioselement,mobileuielement"
-			refimgid="49a2de78-a28a-4759-9ef4-54f6c3af04fd">
-				/mobileapp[@title='com.inovaint.spar']//button[@accessibilitylabel='Prebrskaj']
-			</item>
 			<basepath>
 				/mobileapp[@title='com.inovaint.spar']
 			</basepath>

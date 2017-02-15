@@ -23,47 +23,17 @@ rxversion="6.2">
 			id="4bea624b-56ca-4817-bd37-431a0775e9a5"
 			ref="7e882a85-3044-455b-bec1-26e83d6cf6d2"
 			type="Recording"/>
-			<testmodule
-			name="ClearAppData"
-			id="63cc49c0-43aa-48b7-8a9f-fd60aea2404f"
-			ref="d75ab6fa-6314-46ab-8f27-4adcb17bbeb7"
-			type="Recording"/>
 			<modulegroups
 			name="Spar"
 			id="829039fa-429a-4299-b777-4f6960a1788c"/>
-			<testmodule
-			name="RunApp"
-			id="8a60ed77-bd99-43a5-b8d8-fd16521d813e"
-			ref="47c4d39f-0d71-4abc-bcb7-f146aaa7813a"
-			type="Recording"/>
-			<modulegroupdef
-			name="ClearAppData"
-			id="cccb901b-c929-4f44-9a45-ecda775976a2">
-				<groupvariables>
-					<groupvariable
-					name="PackageName"
-					id="942a217a-1218-4802-bdd1-2e0d903cf702"/>
-				</groupvariables>
-			</modulegroupdef>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
 			name="Spar"
 			id="829039fa-429a-4299-b777-4f6960a1788c">
 				<modulegroupdef
-				name="ClearAppData"
-				id="cccb901b-c929-4f44-9a45-ecda775976a2">
-					<testmodule
-					name="ClearAppData"
-					id="63cc49c0-43aa-48b7-8a9f-fd60aea2404f"/>
-				</modulegroupdef>
-				<modulegroupdef
 				name="RunApp"
-				id="02f95312-802b-4416-8fbd-23a17455a112">
-					<testmodule
-					name="RunApp"
-					id="8a60ed77-bd99-43a5-b8d8-fd16521d813e"/>
-				</modulegroupdef>
+				id="02f95312-802b-4416-8fbd-23a17455a112"/>
 				<modulegroupdef
 				name="CloseApp"
 				id="322eb951-de42-4e80-ac2d-fbcea6f04b38">

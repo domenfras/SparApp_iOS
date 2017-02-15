@@ -97,8 +97,7 @@ namespace Spar
         [RepositoryFolder("b7801e19-292e-4eb3-a090-c59cc302bf9a")]
         public partial class ComInovaintSparAppFolder : RepoGenBaseFolder
         {
-            SparRepositoryFolders.RegistrationFolder _registration;
-            RepoItemInfo _prebrskajInfo;
+            SparRepositoryFolders.SparAppElementsFolder _sparappelements;
 
             /// <summary>
             /// Creates a new ComInovaintSpar  folder.
@@ -106,8 +105,7 @@ namespace Spar
             public ComInovaintSparAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ComInovaintSpar", "/mobileapp[@title='com.inovaint.spar']", parentFolder, 30000, null, false, "b7801e19-292e-4eb3-a090-c59cc302bf9a", "")
             {
-                _registration = new SparRepositoryFolders.RegistrationFolder(this);
-                _prebrskajInfo = new RepoItemInfo(this, "Prebrskaj", ".//button[@accessibilitylabel='Prebrskaj']", 30000, null, "01f0a008-c3b3-49c2-86fd-01ac5b1482a3");
+                _sparappelements = new SparRepositoryFolders.SparAppElementsFolder(this);
             }
 
             /// <summary>
@@ -135,44 +133,20 @@ namespace Spar
             }
 
             /// <summary>
-            /// The Prebrskaj item.
-            /// </summary>
-            [RepositoryItem("01f0a008-c3b3-49c2-86fd-01ac5b1482a3")]
-            public virtual Ranorex.Button Prebrskaj
-            {
-                get
-                {
-                    return _prebrskajInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Prebrskaj item info.
-            /// </summary>
-            [RepositoryItemInfo("01f0a008-c3b3-49c2-86fd-01ac5b1482a3")]
-            public virtual RepoItemInfo PrebrskajInfo
-            {
-                get
-                {
-                    return _prebrskajInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Registration folder.
+            /// The SparAppElements folder.
             /// </summary>
             [RepositoryFolder("401a318b-7b68-42f9-b1d5-7f62df36fc32")]
-            public virtual SparRepositoryFolders.RegistrationFolder Registration
+            public virtual SparRepositoryFolders.SparAppElementsFolder SparAppElements
             {
-                get { return _registration; }
+                get { return _sparappelements; }
             }
         }
 
         /// <summary>
-        /// The RegistrationFolder folder.
+        /// The SparAppElementsFolder folder.
         /// </summary>
         [RepositoryFolder("401a318b-7b68-42f9-b1d5-7f62df36fc32")]
-        public partial class RegistrationFolder : RepoGenBaseFolder
+        public partial class SparAppElementsFolder : RepoGenBaseFolder
         {
             SparRepositoryFolders.CommonElementsFolder _commonelements;
             SparRepositoryFolders.LandingScreenFolder _landingscreen;
@@ -182,12 +156,14 @@ namespace Spar
             SparRepositoryFolders.Registration_NoCard_DataFolder _registration_nocard_data;
             SparRepositoryFolders.Registration_NoCard_AdditionalDataFolder _registration_nocard_additionaldata;
             SparRepositoryFolders.Registration_PermissionsFolder _registration_permissions;
+            SparRepositoryFolders.Registration_SerialNumberFolder _registration_serialnumber;
+            SparRepositoryFolders.AktualnoFolder _aktualno;
 
             /// <summary>
-            /// Creates a new Registration  folder.
+            /// Creates a new SparAppElements  folder.
             /// </summary>
-            public RegistrationFolder(RepoGenBaseFolder parentFolder) :
-                    base("Registration", "form/?/?/container[@containertype='ViewControllerWrapper']", parentFolder, 30000, null, false, "401a318b-7b68-42f9-b1d5-7f62df36fc32", "")
+            public SparAppElementsFolder(RepoGenBaseFolder parentFolder) :
+                    base("SparAppElements", "form/?/?/container[@containertype='ViewControllerWrapper']", parentFolder, 30000, null, false, "401a318b-7b68-42f9-b1d5-7f62df36fc32", "")
             {
                 _commonelements = new SparRepositoryFolders.CommonElementsFolder(this);
                 _landingscreen = new SparRepositoryFolders.LandingScreenFolder(this);
@@ -197,6 +173,8 @@ namespace Spar
                 _registration_nocard_data = new SparRepositoryFolders.Registration_NoCard_DataFolder(this);
                 _registration_nocard_additionaldata = new SparRepositoryFolders.Registration_NoCard_AdditionalDataFolder(this);
                 _registration_permissions = new SparRepositoryFolders.Registration_PermissionsFolder(this);
+                _registration_serialnumber = new SparRepositoryFolders.Registration_SerialNumberFolder(this);
+                _aktualno = new SparRepositoryFolders.AktualnoFolder(this);
             }
 
             /// <summary>
@@ -293,6 +271,24 @@ namespace Spar
             public virtual SparRepositoryFolders.Registration_PermissionsFolder Registration_Permissions
             {
                 get { return _registration_permissions; }
+            }
+
+            /// <summary>
+            /// The Registration_SerialNumber folder.
+            /// </summary>
+            [RepositoryFolder("7666805d-b880-4966-8123-85d8eab62999")]
+            public virtual SparRepositoryFolders.Registration_SerialNumberFolder Registration_SerialNumber
+            {
+                get { return _registration_serialnumber; }
+            }
+
+            /// <summary>
+            /// The Aktualno folder.
+            /// </summary>
+            [RepositoryFolder("0b00d7ee-e7ec-4dca-92b1-dd21b24633e9")]
+            public virtual SparRepositoryFolders.AktualnoFolder Aktualno
+            {
+                get { return _aktualno; }
             }
         }
 
@@ -1907,6 +1903,439 @@ namespace Spar
                 get
                 {
                     return _dokončajInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Registration_SerialNumberFolder folder.
+        /// </summary>
+        [RepositoryFolder("7666805d-b880-4966-8123-85d8eab62999")]
+        public partial class Registration_SerialNumberFolder : RepoGenBaseFolder
+        {
+            SparRepositoryFolders.SerialNumberFieldsFolder _serialnumberfields;
+            RepoItemInfo _vpišteserijskoštevilkokarticeInfo;
+            RepoItemInfo _prijavaInfo;
+            RepoItemInfo _picturetickInfo;
+            RepoItemInfo _vpišitedatumrojstvaInfo;
+
+            /// <summary>
+            /// Creates a new Registration_SerialNumber  folder.
+            /// </summary>
+            public Registration_SerialNumberFolder(RepoGenBaseFolder parentFolder) :
+                    base("Registration_SerialNumber", "", parentFolder, 0, null, false, "7666805d-b880-4966-8123-85d8eab62999", "")
+            {
+                _serialnumberfields = new SparRepositoryFolders.SerialNumberFieldsFolder(this);
+                _vpišteserijskoštevilkokarticeInfo = new RepoItemInfo(this, "VpišteSerijskoŠtevilkoKartice", ".//text[@localizationkey='#login.cardNumber.enterNumber']", 30000, null, "3855f10d-2a65-4bbf-b602-7ac10c167c4a");
+                _prijavaInfo = new RepoItemInfo(this, "Prijava", ".//button[@accessibilitylabel='Prijava']", 30000, null, "0bdac2ef-7396-4525-97eb-b61a449b7825");
+                _picturetickInfo = new RepoItemInfo(this, "PictureTick", ".//picture[@accessibilityid='ok']", 30000, null, "8f0200b8-3d7c-4df8-bf89-28b4399863bc");
+                _vpišitedatumrojstvaInfo = new RepoItemInfo(this, "VpišiteDatumRojstva", ".//text[@accessibilitylabel='Vpišite datum rojstva']", 30000, null, "28659c0f-a8f6-428c-aa19-ca7e120ea075");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7666805d-b880-4966-8123-85d8eab62999")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VpišteSerijskoŠtevilkoKartice item.
+            /// </summary>
+            [RepositoryItem("3855f10d-2a65-4bbf-b602-7ac10c167c4a")]
+            public virtual Ranorex.Text VpišteSerijskoŠtevilkoKartice
+            {
+                get
+                {
+                    return _vpišteserijskoštevilkokarticeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VpišteSerijskoŠtevilkoKartice item info.
+            /// </summary>
+            [RepositoryItemInfo("3855f10d-2a65-4bbf-b602-7ac10c167c4a")]
+            public virtual RepoItemInfo VpišteSerijskoŠtevilkoKarticeInfo
+            {
+                get
+                {
+                    return _vpišteserijskoštevilkokarticeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Prijava item.
+            /// </summary>
+            [RepositoryItem("0bdac2ef-7396-4525-97eb-b61a449b7825")]
+            public virtual Ranorex.Button Prijava
+            {
+                get
+                {
+                    return _prijavaInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Prijava item info.
+            /// </summary>
+            [RepositoryItemInfo("0bdac2ef-7396-4525-97eb-b61a449b7825")]
+            public virtual RepoItemInfo PrijavaInfo
+            {
+                get
+                {
+                    return _prijavaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PictureTick item.
+            /// </summary>
+            [RepositoryItem("8f0200b8-3d7c-4df8-bf89-28b4399863bc")]
+            public virtual Ranorex.Picture PictureTick
+            {
+                get
+                {
+                    return _picturetickInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PictureTick item info.
+            /// </summary>
+            [RepositoryItemInfo("8f0200b8-3d7c-4df8-bf89-28b4399863bc")]
+            public virtual RepoItemInfo PictureTickInfo
+            {
+                get
+                {
+                    return _picturetickInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VpišiteDatumRojstva item.
+            /// </summary>
+            [RepositoryItem("28659c0f-a8f6-428c-aa19-ca7e120ea075")]
+            public virtual Ranorex.Text VpišiteDatumRojstva
+            {
+                get
+                {
+                    return _vpišitedatumrojstvaInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VpišiteDatumRojstva item info.
+            /// </summary>
+            [RepositoryItemInfo("28659c0f-a8f6-428c-aa19-ca7e120ea075")]
+            public virtual RepoItemInfo VpišiteDatumRojstvaInfo
+            {
+                get
+                {
+                    return _vpišitedatumrojstvaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SerialNumberFields folder.
+            /// </summary>
+            [RepositoryFolder("c84222b2-abb4-45ba-96b5-9f37c95f92d3")]
+            public virtual SparRepositoryFolders.SerialNumberFieldsFolder SerialNumberFields
+            {
+                get { return _serialnumberfields; }
+            }
+        }
+
+        /// <summary>
+        /// The SerialNumberFieldsFolder folder.
+        /// </summary>
+        [RepositoryFolder("c84222b2-abb4-45ba-96b5-9f37c95f92d3")]
+        public partial class SerialNumberFieldsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _text1Info;
+            RepoItemInfo _text2Info;
+            RepoItemInfo _text3Info;
+            RepoItemInfo _text4Info;
+            RepoItemInfo _text5Info;
+            RepoItemInfo _text6Info;
+            RepoItemInfo _text7Info;
+            RepoItemInfo _text8Info;
+
+            /// <summary>
+            /// Creates a new SerialNumberFields  folder.
+            /// </summary>
+            public SerialNumberFieldsFolder(RepoGenBaseFolder parentFolder) :
+                    base("SerialNumberFields", "", parentFolder, 0, null, false, "c84222b2-abb4-45ba-96b5-9f37c95f92d3", "")
+            {
+                _text1Info = new RepoItemInfo(this, "Text1", ".//text[1]", 30000, null, "430c7761-b5ac-46d8-b428-af37a95dae74");
+                _text2Info = new RepoItemInfo(this, "Text2", ".//text[2]", 30000, null, "bba5caf2-a645-4d80-8b1e-1cc721749a83");
+                _text3Info = new RepoItemInfo(this, "Text3", ".//text[3]", 30000, null, "57a4ade6-e41c-4ba4-902b-99ff919a5fc1");
+                _text4Info = new RepoItemInfo(this, "Text4", ".//text[4]", 30000, null, "ffe2f86e-fb0d-4d8c-9337-5f306aaf8aa3");
+                _text5Info = new RepoItemInfo(this, "Text5", ".//text[5]", 30000, null, "aadc1ac5-f24e-4f24-8116-3e9f105a8167");
+                _text6Info = new RepoItemInfo(this, "Text6", ".//text[6]", 30000, null, "2a045277-b622-4e79-baaa-9eec1af4d0e0");
+                _text7Info = new RepoItemInfo(this, "Text7", ".//text[7]", 30000, null, "75fc8b72-b858-489d-96ed-eaa19eccd835");
+                _text8Info = new RepoItemInfo(this, "Text8", ".//text[8]", 30000, null, "e8842c87-2e9a-4ffc-8ac3-9483a9199821");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c84222b2-abb4-45ba-96b5-9f37c95f92d3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text1 item.
+            /// </summary>
+            [RepositoryItem("430c7761-b5ac-46d8-b428-af37a95dae74")]
+            public virtual Ranorex.Text Text1
+            {
+                get
+                {
+                    return _text1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text1 item info.
+            /// </summary>
+            [RepositoryItemInfo("430c7761-b5ac-46d8-b428-af37a95dae74")]
+            public virtual RepoItemInfo Text1Info
+            {
+                get
+                {
+                    return _text1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text2 item.
+            /// </summary>
+            [RepositoryItem("bba5caf2-a645-4d80-8b1e-1cc721749a83")]
+            public virtual Ranorex.Text Text2
+            {
+                get
+                {
+                    return _text2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text2 item info.
+            /// </summary>
+            [RepositoryItemInfo("bba5caf2-a645-4d80-8b1e-1cc721749a83")]
+            public virtual RepoItemInfo Text2Info
+            {
+                get
+                {
+                    return _text2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text3 item.
+            /// </summary>
+            [RepositoryItem("57a4ade6-e41c-4ba4-902b-99ff919a5fc1")]
+            public virtual Ranorex.Text Text3
+            {
+                get
+                {
+                    return _text3Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text3 item info.
+            /// </summary>
+            [RepositoryItemInfo("57a4ade6-e41c-4ba4-902b-99ff919a5fc1")]
+            public virtual RepoItemInfo Text3Info
+            {
+                get
+                {
+                    return _text3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text4 item.
+            /// </summary>
+            [RepositoryItem("ffe2f86e-fb0d-4d8c-9337-5f306aaf8aa3")]
+            public virtual Ranorex.Text Text4
+            {
+                get
+                {
+                    return _text4Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text4 item info.
+            /// </summary>
+            [RepositoryItemInfo("ffe2f86e-fb0d-4d8c-9337-5f306aaf8aa3")]
+            public virtual RepoItemInfo Text4Info
+            {
+                get
+                {
+                    return _text4Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text5 item.
+            /// </summary>
+            [RepositoryItem("aadc1ac5-f24e-4f24-8116-3e9f105a8167")]
+            public virtual Ranorex.Text Text5
+            {
+                get
+                {
+                    return _text5Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text5 item info.
+            /// </summary>
+            [RepositoryItemInfo("aadc1ac5-f24e-4f24-8116-3e9f105a8167")]
+            public virtual RepoItemInfo Text5Info
+            {
+                get
+                {
+                    return _text5Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text6 item.
+            /// </summary>
+            [RepositoryItem("2a045277-b622-4e79-baaa-9eec1af4d0e0")]
+            public virtual Ranorex.Text Text6
+            {
+                get
+                {
+                    return _text6Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text6 item info.
+            /// </summary>
+            [RepositoryItemInfo("2a045277-b622-4e79-baaa-9eec1af4d0e0")]
+            public virtual RepoItemInfo Text6Info
+            {
+                get
+                {
+                    return _text6Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text7 item.
+            /// </summary>
+            [RepositoryItem("75fc8b72-b858-489d-96ed-eaa19eccd835")]
+            public virtual Ranorex.Text Text7
+            {
+                get
+                {
+                    return _text7Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text7 item info.
+            /// </summary>
+            [RepositoryItemInfo("75fc8b72-b858-489d-96ed-eaa19eccd835")]
+            public virtual RepoItemInfo Text7Info
+            {
+                get
+                {
+                    return _text7Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text8 item.
+            /// </summary>
+            [RepositoryItem("e8842c87-2e9a-4ffc-8ac3-9483a9199821")]
+            public virtual Ranorex.Text Text8
+            {
+                get
+                {
+                    return _text8Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text8 item info.
+            /// </summary>
+            [RepositoryItemInfo("e8842c87-2e9a-4ffc-8ac3-9483a9199821")]
+            public virtual RepoItemInfo Text8Info
+            {
+                get
+                {
+                    return _text8Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AktualnoFolder folder.
+        /// </summary>
+        [RepositoryFolder("0b00d7ee-e7ec-4dca-92b1-dd21b24633e9")]
+        public partial class AktualnoFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _prebrskajInfo;
+
+            /// <summary>
+            /// Creates a new Aktualno  folder.
+            /// </summary>
+            public AktualnoFolder(RepoGenBaseFolder parentFolder) :
+                    base("Aktualno", "", parentFolder, 0, null, false, "0b00d7ee-e7ec-4dca-92b1-dd21b24633e9", "")
+            {
+                _prebrskajInfo = new RepoItemInfo(this, "Prebrskaj", ".//button[@accessibilitylabel='Prebrskaj']", 30000, null, "01f0a008-c3b3-49c2-86fd-01ac5b1482a3");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0b00d7ee-e7ec-4dca-92b1-dd21b24633e9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Prebrskaj item.
+            /// </summary>
+            [RepositoryItem("01f0a008-c3b3-49c2-86fd-01ac5b1482a3")]
+            public virtual Ranorex.Button Prebrskaj
+            {
+                get
+                {
+                    return _prebrskajInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Prebrskaj item info.
+            /// </summary>
+            [RepositoryItemInfo("01f0a008-c3b3-49c2-86fd-01ac5b1482a3")]
+            public virtual RepoItemInfo PrebrskajInfo
+            {
+                get
+                {
+                    return _prebrskajInfo;
                 }
             }
         }

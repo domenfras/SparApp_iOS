@@ -222,144 +222,144 @@ namespace Spar.Test_cases.Registration
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Pričnite tako, da skenirate svojo SPAR plus kartico!') on item 'ComInovaintSpar.Registration.LandingScreen.PričniteTakoDaSkenirateSvojoSPARP'.", repo.ComInovaintSpar.Registration.LandingScreen.PričniteTakoDaSkenirateSvojoSPARPInfo, new RecordItemIndex(0));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.LandingScreen.PričniteTakoDaSkenirateSvojoSPARPInfo, "Caption", "Pričnite tako, da skenirate svojo SPAR plus kartico!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Pričnite tako, da skenirate svojo SPAR plus kartico!') on item 'ComInovaintSpar.SparAppElements.LandingScreen.PričniteTakoDaSkenirateSvojoSPARP'.", repo.ComInovaintSpar.SparAppElements.LandingScreen.PričniteTakoDaSkenirateSvojoSPARPInfo, new RecordItemIndex(0));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.LandingScreen.PričniteTakoDaSkenirateSvojoSPARPInfo, "Caption", "Pričnite tako, da skenirate svojo SPAR plus kartico!");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.LandingScreen.NimamSPARPlusKartice' at Center", repo.ComInovaintSpar.Registration.LandingScreen.NimamSPARPlusKarticeInfo, new RecordItemIndex(1));
-            repo.ComInovaintSpar.Registration.LandingScreen.NimamSPARPlusKartice.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.LandingScreen.NimamSPARPlusKartice' at Center", repo.ComInovaintSpar.SparAppElements.LandingScreen.NimamSPARPlusKarticeInfo, new RecordItemIndex(1));
+            repo.ComInovaintSpar.SparAppElements.LandingScreen.NimamSPARPlusKartice.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Postani član SPAR plus') on item 'ComInovaintSpar.Registration.Registration_NoCard_Join.PostaniČlanSPARPlus'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Join.PostaniČlanSPARPlusInfo, new RecordItemIndex(2));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Join.PostaniČlanSPARPlusInfo, "Caption", "Postani član SPAR plus");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Postani član SPAR plus') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PostaniČlanSPARPlus'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PostaniČlanSPARPlusInfo, new RecordItemIndex(2));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PostaniČlanSPARPlusInfo, "Caption", "Postani član SPAR plus");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Ekskluzivni kuponi in ugodnosti') on item 'ComInovaintSpar.Registration.Registration_NoCard_Join.EkskluzivniKuponiInUgodnosti'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Join.EkskluzivniKuponiInUgodnostiInfo, new RecordItemIndex(3));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Join.EkskluzivniKuponiInUgodnostiInfo, "Caption", "Ekskluzivni kuponi in ugodnosti");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Ekskluzivni kuponi in ugodnosti') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Join.EkskluzivniKuponiInUgodnosti'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.EkskluzivniKuponiInUgodnostiInfo, new RecordItemIndex(3));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.EkskluzivniKuponiInUgodnostiInfo, "Caption", "Ekskluzivni kuponi in ugodnosti");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Zbiranje dobropisa na kartici') on item 'ComInovaintSpar.Registration.Registration_NoCard_Join.ZbiranjeDobropisaNaKartici'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Join.ZbiranjeDobropisaNaKarticiInfo, new RecordItemIndex(4));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Join.ZbiranjeDobropisaNaKarticiInfo, "Caption", "Zbiranje dobropisa na kartici");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Zbiranje dobropisa na kartici') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Join.ZbiranjeDobropisaNaKartici'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.ZbiranjeDobropisaNaKarticiInfo, new RecordItemIndex(4));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.ZbiranjeDobropisaNaKarticiInfo, "Caption", "Zbiranje dobropisa na kartici");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Dostop do SPAR plus kartice kar na telefonu') on item 'ComInovaintSpar.Registration.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelef'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelefInfo, new RecordItemIndex(5));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelefInfo, "Caption", "Dostop do SPAR plus kartice kar na telefonu");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Dostop do SPAR plus kartice kar na telefonu') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelef'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelefInfo, new RecordItemIndex(5));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.DostopDoSPARPlusKarticeKarNaTelefInfo, "Caption", "Dostop do SPAR plus kartice kar na telefonu");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.Registration_NoCard_Join.PridružiteSe' at Center", repo.ComInovaintSpar.Registration.Registration_NoCard_Join.PridružiteSeInfo, new RecordItemIndex(6));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Join.PridružiteSe.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PridružiteSe' at Center", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PridružiteSeInfo, new RecordItemIndex(6));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Join.PridružiteSe.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSFirstName' on item 'ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Ime'.", repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.ImeInfo, new RecordItemIndex(7));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Ime.Element.SetAttributeValue("Text", iOSFirstName);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSFirstName' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Ime'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.ImeInfo, new RecordItemIndex(7));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Ime.Element.SetAttributeValue("Text", iOSFirstName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSLastName' on item 'ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Priimek'.", repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.PriimekInfo, new RecordItemIndex(8));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Priimek.Element.SetAttributeValue("Text", iOSLastName);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSLastName' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Priimek'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.PriimekInfo, new RecordItemIndex(8));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Priimek.Element.SetAttributeValue("Text", iOSLastName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSBirthDate' on item 'ComInovaintSpar.Registration.Registration_NoCard_PersonalData.DatumRojstva'.", repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.DatumRojstvaInfo, new RecordItemIndex(9));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.DatumRojstva.Element.SetAttributeValue("Text", iOSBirthDate);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSBirthDate' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.DatumRojstva'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.DatumRojstvaInfo, new RecordItemIndex(9));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.DatumRojstva.Element.SetAttributeValue("Text", iOSBirthDate);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Spol' at Center", repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.SpolInfo, new RecordItemIndex(10));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Spol.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Spol' at Center", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.SpolInfo, new RecordItemIndex(10));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Spol.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Moški' at Center", repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.MoškiInfo, new RecordItemIndex(11));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_PersonalData.Moški.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Moški' at Center", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.MoškiInfo, new RecordItemIndex(11));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_PersonalData.Moški.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Naprej' at Center", repo.ComInovaintSpar.Registration.CommonElements.NaprejInfo, new RecordItemIndex(12));
-            repo.ComInovaintSpar.Registration.CommonElements.Naprej.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Naprej' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.NaprejInfo, new RecordItemIndex(12));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Naprej.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Vpišite podatke o prebivališču') on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.VpišitePodatkeOPrebivališču'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.VpišitePodatkeOPrebivališčuInfo, new RecordItemIndex(13));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Address.VpišitePodatkeOPrebivališčuInfo, "Caption", "Vpišite podatke o prebivališču");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Vpišite podatke o prebivališču') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.VpišitePodatkeOPrebivališču'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.VpišitePodatkeOPrebivališčuInfo, new RecordItemIndex(13));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.VpišitePodatkeOPrebivališčuInfo, "Caption", "Vpišite podatke o prebivališču");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSCountry' on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.Država'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.DržavaInfo, new RecordItemIndex(14));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Address.Država.Element.SetAttributeValue("Text", iOSCountry);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSCountry' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Država'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.DržavaInfo, new RecordItemIndex(14));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Država.Element.SetAttributeValue("Text", iOSCountry);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSStreet' on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.Ulica'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.UlicaInfo, new RecordItemIndex(15));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Address.Ulica.Element.SetAttributeValue("Text", iOSStreet);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSStreet' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Ulica'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.UlicaInfo, new RecordItemIndex(15));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Ulica.Element.SetAttributeValue("Text", iOSStreet);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSHouseNumber' on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.HišnaŠtevilka'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.HišnaŠtevilkaInfo, new RecordItemIndex(16));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Address.HišnaŠtevilka.Element.SetAttributeValue("Text", iOSHouseNumber);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSHouseNumber' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.HišnaŠtevilka'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.HišnaŠtevilkaInfo, new RecordItemIndex(16));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.HišnaŠtevilka.Element.SetAttributeValue("Text", iOSHouseNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPostNumber' on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.PoštnaŠtevilka'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.PoštnaŠtevilkaInfo, new RecordItemIndex(17));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Address.PoštnaŠtevilka.Element.SetAttributeValue("Text", iOSPostNumber);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPostNumber' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.PoštnaŠtevilka'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.PoštnaŠtevilkaInfo, new RecordItemIndex(17));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.PoštnaŠtevilka.Element.SetAttributeValue("Text", iOSPostNumber);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSCity' on item 'ComInovaintSpar.Registration.Registration_NoCard_Address.Kraj'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Address.KrajInfo, new RecordItemIndex(18));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Address.Kraj.Element.SetAttributeValue("Text", iOSCity);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSCity' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Kraj'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.KrajInfo, new RecordItemIndex(18));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Address.Kraj.Element.SetAttributeValue("Text", iOSCity);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key '{ENTER}' press on 'ComInovaintSpar'.", repo.ComInovaintSpar.SelfInfo, new RecordItemIndex(19));
             repo.ComInovaintSpar.Self.PressKeys("{ENTER}");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Naprej' at Center", repo.ComInovaintSpar.Registration.CommonElements.NaprejInfo, new RecordItemIndex(20));
-            repo.ComInovaintSpar.Registration.CommonElements.Naprej.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Naprej' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.NaprejInfo, new RecordItemIndex(20));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Naprej.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Vpišite podatke za prijavo') on item 'ComInovaintSpar.Registration.Registration_NoCard_Data.VpišitePodatkeZaPrijavo'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Data.VpišitePodatkeZaPrijavoInfo, new RecordItemIndex(21));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_Data.VpišitePodatkeZaPrijavoInfo, "Caption", "Vpišite podatke za prijavo");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Vpišite podatke za prijavo') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Data.VpišitePodatkeZaPrijavo'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.VpišitePodatkeZaPrijavoInfo, new RecordItemIndex(21));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.VpišitePodatkeZaPrijavoInfo, "Caption", "Vpišite podatke za prijavo");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSMobilePhone' on item 'ComInovaintSpar.Registration.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefona'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefonaInfo, new RecordItemIndex(22));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefona.Element.SetAttributeValue("Text", iOSMobilePhone);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSMobilePhone' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefona'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefonaInfo, new RecordItemIndex(22));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.ŠtevilkaMobilnegaTelefona.Element.SetAttributeValue("Text", iOSMobilePhone);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSEmail' on item 'ComInovaintSpar.Registration.Registration_NoCard_Data.EMailNaslov'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Data.EMailNaslovInfo, new RecordItemIndex(23));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Data.EMailNaslov.Element.SetAttributeValue("Text", iOSEmail);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSEmail' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Data.EMailNaslov'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.EMailNaslovInfo, new RecordItemIndex(23));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.EMailNaslov.Element.SetAttributeValue("Text", iOSEmail);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPassword' on item 'ComInovaintSpar.Registration.Registration_NoCard_Data.Geslo'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Data.GesloInfo, new RecordItemIndex(24));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Data.Geslo.Element.SetAttributeValue("Text", iOSPassword);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPassword' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Data.Geslo'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.GesloInfo, new RecordItemIndex(24));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.Geslo.Element.SetAttributeValue("Text", iOSPassword);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPassword' on item 'ComInovaintSpar.Registration.Registration_NoCard_Data.PonoviGeslo'.", repo.ComInovaintSpar.Registration.Registration_NoCard_Data.PonoviGesloInfo, new RecordItemIndex(25));
-            repo.ComInovaintSpar.Registration.Registration_NoCard_Data.PonoviGeslo.Element.SetAttributeValue("Text", iOSPassword);
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Text to '$iOSPassword' on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_Data.PonoviGeslo'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.PonoviGesloInfo, new RecordItemIndex(25));
+            repo.ComInovaintSpar.SparAppElements.Registration_NoCard_Data.PonoviGeslo.Element.SetAttributeValue("Text", iOSPassword);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key '{ENTER}' press on 'ComInovaintSpar'.", repo.ComInovaintSpar.SelfInfo, new RecordItemIndex(26));
             repo.ComInovaintSpar.Self.PressKeys("{ENTER}");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Naprej' at Center", repo.ComInovaintSpar.Registration.CommonElements.NaprejInfo, new RecordItemIndex(27));
-            repo.ComInovaintSpar.Registration.CommonElements.Naprej.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Naprej' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.NaprejInfo, new RecordItemIndex(27));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Naprej.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Dodatne informacije') on item 'ComInovaintSpar.Registration.Registration_NoCard_AdditionalData.DodatneInformacije'.", repo.ComInovaintSpar.Registration.Registration_NoCard_AdditionalData.DodatneInformacijeInfo, new RecordItemIndex(28));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_NoCard_AdditionalData.DodatneInformacijeInfo, "Caption", "Dodatne informacije");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Dodatne informacije') on item 'ComInovaintSpar.SparAppElements.Registration_NoCard_AdditionalData.DodatneInformacije'.", repo.ComInovaintSpar.SparAppElements.Registration_NoCard_AdditionalData.DodatneInformacijeInfo, new RecordItemIndex(28));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_NoCard_AdditionalData.DodatneInformacijeInfo, "Caption", "Dodatne informacije");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Naprej' at Center", repo.ComInovaintSpar.Registration.CommonElements.NaprejInfo, new RecordItemIndex(29));
-            repo.ComInovaintSpar.Registration.CommonElements.Naprej.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Naprej' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.NaprejInfo, new RecordItemIndex(29));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Naprej.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Ne spreglejte kuponov in promocij') on item 'ComInovaintSpar.Registration.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocij'.", repo.ComInovaintSpar.Registration.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocijInfo, new RecordItemIndex(30));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocijInfo, "Caption", "Ne spreglejte kuponov in promocij");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Ne spreglejte kuponov in promocij') on item 'ComInovaintSpar.SparAppElements.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocij'.", repo.ComInovaintSpar.SparAppElements.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocijInfo, new RecordItemIndex(30));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_Permissions.Permissions_CommonElements.NeSpreglejteKuponovInPromocijInfo, "Caption", "Ne spreglejte kuponov in promocij");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.Registration.CommonElements.PreskočiInfo, new RecordItemIndex(31));
-            repo.ComInovaintSpar.Registration.CommonElements.Preskoči.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.PreskočiInfo, new RecordItemIndex(31));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Preskoči.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Kje je najbližji Spar?') on item 'ComInovaintSpar.Registration.Registration_Permissions.Permission_Location.KjeJeNajbližjiSpar'.", repo.ComInovaintSpar.Registration.Registration_Permissions.Permission_Location.KjeJeNajbližjiSparInfo, new RecordItemIndex(32));
-            Validate.Attribute(repo.ComInovaintSpar.Registration.Registration_Permissions.Permission_Location.KjeJeNajbližjiSparInfo, "Caption", "Kje je najbližji Spar?");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='Kje je najbližji Spar?') on item 'ComInovaintSpar.SparAppElements.Registration_Permissions.Permission_Location.KjeJeNajbližjiSpar'.", repo.ComInovaintSpar.SparAppElements.Registration_Permissions.Permission_Location.KjeJeNajbližjiSparInfo, new RecordItemIndex(32));
+            Validate.Attribute(repo.ComInovaintSpar.SparAppElements.Registration_Permissions.Permission_Location.KjeJeNajbližjiSparInfo, "Caption", "Kje je najbližji Spar?");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.Registration.CommonElements.PreskočiInfo, new RecordItemIndex(33));
-            repo.ComInovaintSpar.Registration.CommonElements.Preskoči.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.CommonElements.Preskoči' at Center", repo.ComInovaintSpar.SparAppElements.CommonElements.PreskočiInfo, new RecordItemIndex(33));
+            repo.ComInovaintSpar.SparAppElements.CommonElements.Preskoči.Touch();
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.Registration.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj' at Center", repo.ComInovaintSpar.Registration.Registration_Permissions.SparCardAlwaysAccessible.DokončajInfo, new RecordItemIndex(34));
-            repo.ComInovaintSpar.Registration.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj' at Center", repo.ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.DokončajInfo, new RecordItemIndex(34));
+            repo.ComInovaintSpar.SparAppElements.Registration_Permissions.SparCardAlwaysAccessible.Dokončaj.Touch();
             Delay.Milliseconds(500);
             
         }
