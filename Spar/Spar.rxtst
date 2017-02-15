@@ -91,6 +91,11 @@ rxversion="6.2">
 			<testcase
 			name="iOS_Registration_SerialNumber_Valid"
 			id="26127c63-47dc-48fa-8b29-3f10fed3c22d"/>
+			<testmodule
+			name="iOS_Registration_SerialNumber_Invalid"
+			id="334a7d7e-dccf-43e3-a71d-8f508cddba42"
+			ref="5c283beb-dac5-4418-8dba-997e6d26cbdd"
+			type="Recording"/>
 			<folder
 			name="iOS_ShoppingList"
 			id="345ec70a-b3dc-470e-bfad-d175d9c1e6bc"/>
@@ -181,7 +186,11 @@ rxversion="6.2">
 							</testcase>
 							<testcase
 							name="iOS_Registration_SerialNumber_Invalid"
-							id="e8f22bbf-0aab-448b-8490-503ebbabc6d2"/>
+							id="e8f22bbf-0aab-448b-8490-503ebbabc6d2">
+								<testmodule
+								name="iOS_Registration_SerialNumber_Invalid"
+								id="334a7d7e-dccf-43e3-a71d-8f508cddba42"/>
+							</testcase>
 						</folder>
 						<folder
 						name="iOS_Login"

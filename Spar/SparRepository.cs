@@ -98,6 +98,7 @@ namespace Spar
         public partial class ComInovaintSparAppFolder : RepoGenBaseFolder
         {
             SparRepositoryFolders.SparAppElementsFolder _sparappelements;
+            RepoItemInfo _spremeniInfo;
 
             /// <summary>
             /// Creates a new ComInovaintSpar  folder.
@@ -106,6 +107,7 @@ namespace Spar
                     base("ComInovaintSpar", "/mobileapp[@title='com.inovaint.spar']", parentFolder, 30000, null, false, "b7801e19-292e-4eb3-a090-c59cc302bf9a", "")
             {
                 _sparappelements = new SparRepositoryFolders.SparAppElementsFolder(this);
+                _spremeniInfo = new RepoItemInfo(this, "Spremeni", "form//table/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/button[@accessibilitylabel='Spremeni']", 30000, null, "3abbdd4e-6d7c-442b-ad8b-3b4e5a253328");
             }
 
             /// <summary>
@@ -129,6 +131,30 @@ namespace Spar
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Spremeni item.
+            /// </summary>
+            [RepositoryItem("3abbdd4e-6d7c-442b-ad8b-3b4e5a253328")]
+            public virtual Ranorex.Button Spremeni
+            {
+                get
+                {
+                    return _spremeniInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Spremeni item info.
+            /// </summary>
+            [RepositoryItemInfo("3abbdd4e-6d7c-442b-ad8b-3b4e5a253328")]
+            public virtual RepoItemInfo SpremeniInfo
+            {
+                get
+                {
+                    return _spremeniInfo;
                 }
             }
 

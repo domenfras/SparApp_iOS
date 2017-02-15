@@ -687,6 +687,16 @@ rxversion="6.2">
 					/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']
 				</basepath>
 			</folder>
+			<item
+			name="Spremeni"
+			id="3abbdd4e-6d7c-442b-ad8b-3b4e5a253328"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/mobileapp[@title='com.inovaint.spar']/form/container[@caption='']/container[@caption='']/container[@caption='']/container[@caption='' and @containertype='']/container[@caption='']/container[@caption='']/container[@caption='']/table/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni časiZa prikaz najbližje Spar trgovine potrebujemo vaše dovoljenje.Spremeni']/button[@accessibilitylabel='Spremeni']"
+			addcaps="button,ioselement,mobileuielement"
+			refimgid="ff2a9c5f-d503-4310-ae85-0d7d0d322231">
+				/mobileapp[@title='com.inovaint.spar']/form//table/container[@accessibilitylabel='Lokacije in odpiralni &#269;asiZa prikaz najbli&#382;je Spar trgovine potrebujemo va&#353;e dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni &#269;asiZa prikaz najbli&#382;je Spar trgovine potrebujemo va&#353;e dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni &#269;asiZa prikaz najbli&#382;je Spar trgovine potrebujemo va&#353;e dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni &#269;asiZa prikaz najbli&#382;je Spar trgovine potrebujemo va&#353;e dovoljenje.Spremeni']/container[@accessibilitylabel='Lokacije in odpiralni &#269;asiZa prikaz najbli&#382;je Spar trgovine potrebujemo va&#353;e dovoljenje.Spremeni']/button[@accessibilitylabel='Spremeni']
+			</item>
 			<basepath>
 				/mobileapp[@title='com.inovaint.spar']
 			</basepath>

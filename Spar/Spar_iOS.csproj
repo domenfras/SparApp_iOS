@@ -92,6 +92,18 @@
       <UserCode>true</UserCode>
       <id>efaa62a1-3463-4a59-89e3-80a9aac48756</id>
     </Compile>
+    <Compile Include="Test cases\Registration\iOS_Registration_SerialNumber_Invalid.cs">
+      <BoundTo>e9f04872-84e3-4bc9-b2b5-2ecfe798b6b8</BoundTo>
+      <DependentUpon>iOS_Registration_SerialNumber_Invalid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>255d9b13-560c-446b-91c5-de058edf5032</id>
+    </Compile>
+    <Compile Include="Test cases\Registration\iOS_Registration_SerialNumber_Invalid.UserCode.cs">
+      <BoundTo>e9f04872-84e3-4bc9-b2b5-2ecfe798b6b8</BoundTo>
+      <DependentUpon>iOS_Registration_SerialNumber_Invalid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26423899-fd64-4da2-a9b7-a01de1d4a1a3</id>
+    </Compile>
     <Compile Include="Test cases\Registration\iOS_Registration_SerialNumber_ValidNumber.cs">
       <BoundTo>e6ce8944-c8e6-4ee0-a690-a43fb351b34c</BoundTo>
       <DependentUpon>iOS_Registration_SerialNumber_ValidNumber.rxrec</DependentUpon>
@@ -136,6 +148,11 @@
       <BoundTo>591f6c44-d7a2-44b1-bef9-825c23af42c7</BoundTo>
       <id>389ecc87-bf10-49db-859a-b04a2408963e</id>
       <recordtableid>81b4ca1d-2c8b-4ed3-8bc7-111c9c666dd4</recordtableid>
+    </None>
+    <None Include="Test cases\Registration\iOS_Registration_SerialNumber_Invalid.rxrec">
+      <BoundTo>591f6c44-d7a2-44b1-bef9-825c23af42c7</BoundTo>
+      <id>e9f04872-84e3-4bc9-b2b5-2ecfe798b6b8</id>
+      <recordtableid>5c283beb-dac5-4418-8dba-997e6d26cbdd</recordtableid>
     </None>
     <None Include="Test cases\Registration\iOS_Registration_SerialNumber_ValidNumber.rxrec">
       <id>e6ce8944-c8e6-4ee0-a690-a43fb351b34c</id>
