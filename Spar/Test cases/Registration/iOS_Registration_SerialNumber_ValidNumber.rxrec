@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="a0a3f101-956d-4c26-89bd-b1a38f1efd74"
+embeddedrepository="False"
+mode="Mobile">
+	<name>
+		iOS_Registration_SerialNumber_ValidNumber
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="iOS_Registration_SerialNumber_ValidNumber"
+	namespace="Spar.Test_cases.Registration"/>
+	<variables/>
+	<recorditems>
+		<runmobileapprecorditem
+		enabled="True"
+		optional="False"
+		duration="3500ms"
+		application="com.inovaint.spar"
+		devicename="iPhone7"
+		resetInitialState="True">
+			<comment/>
+			<bindings/>
+		</runmobileapprecorditem>
+		<touchrecorditem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="8536e06a-000c-4e34-a81b-3431c061492f"
+		imagerect="96,561,183,14"
+		touchtype="Touch"
+		elementlocation="Center"
+		fingerid="0"
+		touchduration="100ms"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		isremote="True"
+		sx="0"
+		sy="0">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="a3ad497f-8d14-451c-92d5-13eea4041a31">
+				<element
+				role="button"
+				prefcap="button"
+				capabilities="ioselement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="5"
+				rect="96,561,183,14"
+				snapElem="">
+					<attribute
+					name="text"
+					type="System.String">
+						Vpi&#353;ite serijsko &#353;tevilko kartice
+					</attribute>
+					<attribute
+					name="controltag"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="accessibilitylabel"
+					type="System.String">
+						Vpi&#353;ite serijsko &#353;tevilko kartice
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						Spar.Button
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						903926480
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.inovaint.spar']/form/?/?/container[@containertype='ViewControllerWrapper']//button[@accessibilitylabel='Vpi&#353;ite serijsko &#353;tevilko kartice']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a9433e23-505c-4d97-b984-850ba3f0aac2">
+				iVBORw0KGgoAAAANSUhEUgAAALcAAAAOCAYAAABtq40iAAAABGdBTUEAALGPC/xhBQAAACFJREFU
+aEPtwQENAAAAwqD3T20PBwQAAAAAAAAAAABcqAEoFgABxzlY+wAAAABJRU5ErkJggg==
+			</helperscreenshot>
+		</touchrecorditem>
+	</recorditems>
+	<repository
+	name="SparRepository"
+	id="c55abb3d-7d0d-4435-8640-bb30710f5f27"
+	rxversion="6.2"
+	relativepath="..\..\SparRepository.rxrep">
+		<codegen
+		classname="SparRepository"
+		namespace="Spar"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="c12fa4a9-bf96-41a7-9866-79edafaddcf2"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		iOS_Registration_SerialNumber_ValidNumber.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

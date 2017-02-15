@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="7e882a85-3044-455b-bec1-26e83d6cf6d2"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		CloseiOSApplication
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseiOSApplication"
+	namespace="Spar.Test_cases.Utility"/>
+	<variables/>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		optional="False"
+		searchpropertyid="bed0430a-dfed-411c-bf9e-e7c0d303c45e"
+		method="KillProcess"
+		graceperiod="0ms">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ItemRecorderEditor"
+			id="b7801e19-292e-4eb3-a090-c59cc302bf9a">
+				<path>
+					/mobileapp[@title='com.inovaint.spar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	name="SparRepository"
+	id="c55abb3d-7d0d-4435-8640-bb30710f5f27"
+	rxversion="6.2"
+	relativepath="..\..\SparRepository.rxrep">
+		<codegen
+		classname="SparRepository"
+		namespace="Spar"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="c12fa4a9-bf96-41a7-9866-79edafaddcf2"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseiOSApplication.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>
